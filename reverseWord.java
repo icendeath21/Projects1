@@ -5,14 +5,22 @@ public class reverseWord {
 
 	public static void main(String[] args) {
 		
-		String newWord = "";
 		String convert = "supercalifragilisticespialidocous";
 		
-		char[] word = new char[convert.length()];
+		reverseWord(convert);
+
+	}// main
+	
+	public static void reverseWord(String s) {
 		
-		for (int y = 0; y<=convert.length()-1; y++) {
+		String newWord = "";
+		
+		
+		char[] word = new char[s.length()];
+		
+		for (int y = 0; y<=s.length()-1; y++) {
 			
-			word[y]=convert.charAt((convert.length()-1)-y);
+			word[y]=s.charAt((s.length()-1)-y);
 			
 		}
 		
@@ -20,8 +28,7 @@ public class reverseWord {
 		
 		
 		System.out.println(newWord);
-		//System.out.println("Hello World");
-
-	}// main
+		
+	}
 	
 }
